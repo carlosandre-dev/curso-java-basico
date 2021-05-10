@@ -16,7 +16,7 @@ public class Exer06 {
 		
 		area = PI* (raio*raio);
 		
-		
+		System.out.println("A área do circulo é de: " + area);		
 	}
 
 }
