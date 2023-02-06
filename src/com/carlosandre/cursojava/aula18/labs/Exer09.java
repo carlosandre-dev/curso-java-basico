@@ -12,12 +12,12 @@ public class Exer09 {
 		int[] vetorC = new int[vetorA.length];
 
 		for (int i = 0; i < vetorA.length; i++) {
-			System.out.print("Informe o º" + (i + 1) + "elemento do Vetor A: ");
+			System.out.print("Informe o " + (i + 1) + "º elemento do Vetor A: ");
 			vetorA[i] = scan.nextInt();
 		}
 
 		for (int i = 0; i < vetorB.length; i++) {
-			System.out.print("Informe o º" + (i + 1) + "elemento do Vetor B: ");
+			System.out.print("Informe o " + (i + 1) + "º elemento do Vetor B: ");
 			vetorB[i] = scan.nextInt();
 		}
 

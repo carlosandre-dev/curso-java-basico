@@ -2,13 +2,13 @@ package com.carlosandre.cursojava.aula18.labs;
 
 import java.util.Scanner;
 
-public class Exer10 {
+public class Exer15 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
 		int[] vetorA = new int[10];
-		int[] vetorB = new int[vetorA.length];
+		int pares = 0, impares = 0;
 
 		for (int i = 0; i < vetorA.length; i++) {
 			System.out.print("Informe o " + (i + 1) + "º elemento do Vetor A: ");
@@ -16,18 +16,18 @@ public class Exer10 {
 		}
 
 		for (int i = 0; i < vetorA.length; i++) {
-			vetorB[i] = vetorA[i] % 2;
+			if (vetorA[i] % 2 == 0) {
+				pares++;
+			} else {
+				impares++;
+			}
 		}
-
-		System.out.println("==================");
-
-		for (int i = 0; i < vetorA.length; i++) {
-			System.out.println("Vetor A: " + vetorA[i]);
-		}
-
-		for (int i = 0; i < vetorB.length; i++) {
-			System.out.println("Vetor B: " + vetorB[i]);
-		}
+		
+		double percentualPar = (pares * 100) / vetorA.length;
+		double percentualImpar = (impares * 100) / vetorA.length;
+		
+		System.out.println("Percentual de pares: " + percentualPar);
+		System.out.println("Percentual de ímpares: " + percentualImpar);
 
 	}
 
