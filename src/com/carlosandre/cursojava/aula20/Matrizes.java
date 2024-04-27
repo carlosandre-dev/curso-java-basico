@@ -35,7 +35,7 @@ public class Matrizes {
 			for (int j = 0; j < notasAlunos[i].length; j++) {
 				soma += notasAlunos[i][j];
 			}
-			System.out.println("A média do aluno " + i + " é: " + (soma/4));
+			System.out.println("A média do aluno " + (i+1) + " é: " + (soma/4));
 		}
 	}
 
